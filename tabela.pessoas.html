@@ -24,12 +24,37 @@
             border: 1px solid black;
             padding: 8px;
         }
+
+        .destaque{
+            background-color: aquamarine;
+        }
+        
+        /*tr.destaque{
+            background-color: rgb(107, 105, 110); deixa uma linha só colorida*/
+        
+
+        col.conome{
+            background-color: rgb(127, 235, 235);
+        }
+
+        col.cosexo , col.coidade{ /*deixa duas colunas com a mesma cor ao mesmo tempo*/
+            background-color: cadetblue;
+        }
     </style>
 </head>
 <body>
     <h1>Exercício tabelas</h1>
 
     <table>
+           
+      <colgroup> <!--deixa a coluna selecionada colorida
+        -->
+          <col class="conome">
+          <col class="cosexo">
+          <col class="coidade">
+          <col class="coprof">
+      </colgroup>
+
         <caption>Cadastros</caption>
 
         <tr>
@@ -61,7 +86,7 @@
         </tr>
 
         <tr>
-            <td>Viviane</td>
+            <td >Viviane</td>
             <td>F</td>
             <td>43</td>
             <td>Administradora</td>
@@ -70,8 +95,15 @@
         <tr>
             <td>Sidney</td>
             <td>M</td>
-            <td>25</td>
+            <td>33</td>
             <td>Bombeiro</td>
+        </tr>
+
+        <tr>
+            <td>Vitor</td>
+            <td>M</td>
+            <td>51</td>
+            <td>Advogado</td>
         </tr>
     </table>
 </body>
